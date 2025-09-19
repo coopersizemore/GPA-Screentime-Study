@@ -13,15 +13,6 @@ conn = Connection(server, user=user, password=password, auto_bind=True)
 
 print("✅ Successfully bound to LDAP!")
 
-# Perform the search
-# conn.search(search_base, search_filter, attributes=['sAMAccountName', 'givenName', 'sn', 'userPrincipalName'])
-
-# conn.search(
-#     search_base="DC=wolftech,DC=ad,DC=ncsu,DC=edu",
-#     search_filter="(&(givenName=Jonathan)(sn=P*))",
-#     search_scope=SUBTREE,
-#     attributes=["cn", "mail", "sAMAccountName", "memberOf"]
-# )
 search_base='DC=wolftech,DC=ad,DC=ncsu,DC=edu',
 search_filter="(&(objectClass=user)(memberOf=CN=WT-NCSU-Students-Undergraduate,OU=Managed Groups,OU=NCSU,DC=wolftech,DC=ad,DC=ncsu,DC=edu))"
 search_scope=SUBTREE
