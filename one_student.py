@@ -15,7 +15,7 @@ conn = Connection(server, user=user, password=password, auto_bind=True)
 
 print("✅ Successfully bound to LDAP!")
 
-student_first = "Allison"
+student_first = "Ally"
 student_last = "Waddell"
 
 
