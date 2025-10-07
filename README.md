@@ -8,7 +8,7 @@ For One Student, change the first and last name of student to get info for that 
 
 For Sample_Builder, the output is in the .gitignore to avoid publicizing our student email list
 
-Useful resources:
+# Useful resources:
 
 Overview of how to adminster a survey at NCSU
 
