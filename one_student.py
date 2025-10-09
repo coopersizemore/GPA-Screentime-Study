@@ -2,9 +2,11 @@ from ldap3 import Server, Connection, ALL, SUBTREE
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+# Remove the parameter from load_dotenv if you have issues running in a Windows environment
+load_dotenv(dotenv_path="user.env", override=True)
 password = os.getenv("PASSWORD")
 user = os.getenv("USER")
+
 
 # AD host with SSL on port 636
 server = Server("ldaps.wolftech.ad.ncsu.edu", port=636, use_ssl=True, get_info=ALL)

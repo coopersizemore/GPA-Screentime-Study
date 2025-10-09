@@ -1,8 +1,9 @@
 from ldap3 import Server, Connection, ALL, SUBTREE
 from dotenv import load_dotenv
 import os
+# Remove the parameter from load_dotenv if you have issues running in a Windows environment
+load_dotenv(dotenv_path="user.env", override=True)
 
-load_dotenv()
 password = os.getenv("PASSWORD")
 user = os.getenv("USER")
 

@@ -3,7 +3,8 @@ from dotenv import load_dotenv
 import os
 from random import sample
 
-load_dotenv()
+# Remove the parameter from load_dotenv if you have issues running in a Windows environment
+load_dotenv(dotenv_path="user.env", override=True)
 password = os.getenv("PASSWORD")
 user = os.getenv("USER")
 

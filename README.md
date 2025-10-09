@@ -25,3 +25,11 @@ https://policies.ncsu.edu/regulation/reg-08-00-03/
 registering survey:
 
 https://uda.ncsu.edu/surveys/administering-a-survey-at-ncstate/register-your-survey/
+
+-------------------------------------------------------------------------------------------
+
+export_students.py will output st370_undergrads_college.csv that contains studnets and their attributes ordered by: unity_id,first_name,last_name,email,campus_id,college
+
+select_by_college.py will take st370_undergrads_college.csv and sort it by college to then randomly select 40 students from each college to get the sample email list in two forms: email_list.txt and email_list.csv. 
+
+email_list.csv is for qualtrics. email_list.txt is to see which studnets were selected from each college. 

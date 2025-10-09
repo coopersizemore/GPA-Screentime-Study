@@ -1,0 +1,56 @@
+# ========================
+# Python ignores
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+*.so
+*.log
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+build/
+dist/
+
+# ========================
+# Sensitive or local-only files
+# ========================
+# Environment files (store credentials, API keys, etc.)
+.env
+user.env
+
+# Data / output files
+*.csv
+*.txt
+*.tmp
+*.bak
+*.dat
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.swp
+
+# ========================
+# Git & misc
+# ========================
+# Local Git configuration files
+.gitconfig
+
+# ========================
+# Jupyter or notebook artifacts (if used)
+# ========================
+.ipynb_checkpoints/
+*.ipynb
